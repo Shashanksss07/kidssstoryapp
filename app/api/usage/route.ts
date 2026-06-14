@@ -1,0 +1,1 @@
+import { NextResponse } from 'next/server';import { requireUser } from '@/lib/auth';import { getOrCreateQuota,limits } from '@/lib/quotas';export async function GET(){try{const {user}=await requireUser();return NextResponse.json({quota:await getOrCreateQuota(user.id),limits})}catch(e:any){return NextResponse.json({error:'Please log in to create a story.'},{status:401})}}

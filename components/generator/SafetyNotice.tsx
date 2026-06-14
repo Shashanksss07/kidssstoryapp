@@ -1,0 +1,1 @@
+import { Card } from '@/components/ui/Card';export function SafetyNotice(){return <Card className="bg-mint/50"><b>Designed for parent and teacher use.</b><p className="text-sm">Please do not enter a child’s full name, school, address, phone number, or private personal details. Stories are private by default.</p></Card>}

@@ -1,0 +1,1 @@
+'use client';export function AudioPlayer({src,label='Play narration'}:{src?:string|null;label?:string}){if(!src)return <p className="text-sm text-stone-500">Narration unavailable.</p>;return <audio aria-label={label} controls src={src} className="w-full"/>}

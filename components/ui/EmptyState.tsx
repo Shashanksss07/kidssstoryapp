@@ -1,0 +1,1 @@
+import { Card } from './Card';export function EmptyState({title,children}:{title:string;children?:React.ReactNode}){return <Card className="text-center"><h3 className="text-xl font-bold">{title}</h3><div className="mt-2 text-stone-600">{children}</div></Card>}

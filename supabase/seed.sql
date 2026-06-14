@@ -1,0 +1,1 @@
+-- Optional local seed data can be added after creating test auth users.

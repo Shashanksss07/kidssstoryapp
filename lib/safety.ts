@@ -1,0 +1,6 @@
+import type { StoryInput,StoryOutput } from './validators';
+const unsafe=['sex','sexual','groom','nude','kill','murder','blood','gore','gun','knife','weapon','suicide','self-harm','hate','racist','abuse','drug','cocaine','horror','demon','political campaign','address','phone number','school name'];
+const brands=['disney','pixar','harry potter','spider-man','spiderman','doraemon','shinchan','peppa pig','chhota bheem','frozen','ghibli','marvel','dc comics'];
+export function sanitizeInput(t:string){return t.replace(/[<>]/g,'').trim().slice(0,500)}export function containsUnsafeTerms(t:string){const s=t.toLowerCase();return [...unsafe,...brands].some(w=>s.includes(w))}export function validateUserStoryInput(i:StoryInput){const text=Object.values(i).join(' ');if(containsUnsafeTerms(text))return {safe:false,message: brands.some(b=>text.toLowerCase().includes(b))?'Please choose an original character and original story world.':'Please try a safer story idea for children.'};return {safe:true}}
+export function validateGeneratedStory(story:StoryOutput){const text=JSON.stringify(story);if(containsUnsafeTerms(text))return {safe:false,message:'Please try a safer story idea for children.'};return {safe:true}}
+// TODO: Optional: add OpenAI moderation endpoint before production.
