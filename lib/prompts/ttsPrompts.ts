@@ -1,0 +1,1 @@
+export function buildTtsInstructions(ageGroup:string){return `Read this children’s story page in a warm, gentle, clear bedtime-story voice. Speak slowly and naturally. Use friendly expression, soft pacing, and clear pronunciation. Do not sound scary, robotic, sarcastic, or overly dramatic. Make it easy for a child aged ${ageGroup} to understand.`}

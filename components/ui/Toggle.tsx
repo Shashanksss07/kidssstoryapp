@@ -1,0 +1,1 @@
+'use client';export function Toggle({checked,onChange,label}:{checked:boolean;onChange:(v:boolean)=>void;label:string}){return <label className="flex items-center justify-between gap-4 rounded-2xl bg-white/70 p-4"><span>{label}</span><input aria-label={label} type="checkbox" checked={checked} onChange={e=>onChange(e.target.checked)} className="h-5 w-5"/></label>}

@@ -1,0 +1,1 @@
+import { HTMLAttributes } from 'react';import { cn } from '@/lib/utils';export function Card({className,...p}:HTMLAttributes<HTMLDivElement>){return <div className={cn('rounded-3xl bg-white/75 p-6 shadow-soft ring-1 ring-white/70 backdrop-blur',className)} {...p}/>}

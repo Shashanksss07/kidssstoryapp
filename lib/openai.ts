@@ -1,0 +1,1 @@
+import OpenAI from 'openai';export const openai=new OpenAI({apiKey:process.env.OPENAI_API_KEY});export const models={text:process.env.OPENAI_TEXT_MODEL||'gpt-5-mini',image:process.env.OPENAI_IMAGE_MODEL||'gpt-image-2',imageQuality:process.env.OPENAI_IMAGE_QUALITY||'low',tts:process.env.OPENAI_TTS_MODEL||'gpt-4o-mini-tts',voice:process.env.OPENAI_TTS_VOICE||'alloy'};

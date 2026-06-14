@@ -1,0 +1,1 @@
+'use client';import { Button } from '@/components/ui/Button';export default function Error({reset}:{reset:()=>void}){return <main className="p-10 text-center"><h1 className="text-3xl font-black">Something went softly sideways.</h1><p className="mt-2">Please try again.</p><Button onClick={reset} className="mt-6">Try again</Button></main>}

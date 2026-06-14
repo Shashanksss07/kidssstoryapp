@@ -1,0 +1,1 @@
+import { Card } from '@/components/ui/Card';export function CostNotice(){return <Card className="bg-peach/50"><b>Cost-aware generation</b><p className="text-sm">Images and voice use more credits. Free stories are limited to 3 pages, 3 images, and 3 audio clips.</p></Card>}

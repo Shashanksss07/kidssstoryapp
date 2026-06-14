@@ -1,0 +1,1 @@
+import { createAdminClient } from './supabase/admin';export async function logUsage(row:any){try{await createAdminClient().from('usage_logs').insert(row)}catch(e){console.error('usage log failed',e)}}

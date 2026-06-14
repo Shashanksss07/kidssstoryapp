@@ -1,0 +1,1 @@
+import { cn } from '@/lib/utils';export function Badge({children,className}:{children:React.ReactNode;className?:string}){return <span className={cn('inline-flex rounded-full bg-lavender/60 px-3 py-1 text-xs font-bold text-stone-700',className)}>{children}</span>}
